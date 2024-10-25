@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AURAK student satisfaction Survey</title>
+  </head>
+  <body>
+    <h1 id="title">AURAK student satisfaction Survey</h1>
+    <p id="description">Please fill this survey prepared by SGA to boost student satisfaction</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">Name:<input type="text" id="name" placeholder="Enter your name here" required></label>
+        <label id="email-label">Email:<input type="email" id="email" placeholder="Enter your email here" required></label>
+        <label id="number-label">Age(optional):<input type="number" id="number" min="16" max="120" placeholder="Enter your age here"></label>
+        </fieldset>
+        <fieldset>
+      <label>What year student are you?
+        <select id="dropdown" required>
+          <option>Select one</option>
+          <option>First year</option>
+          <option>Second year</option>
+          <option>Third year</option>
+          <option>Fourth year</option>
+          <option>Fifth year</option>
+          <option>Graduate</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+    <legend>Are you a member of Student Government Association(SGA)?</legend>
+    <label><input type="radio" name="member" value="yes">Yes</label>
+<label><input type="radio" name="member" value="no">No</label>
+
+    </fieldset>
+    <fieldset>
+    <legend>Which part of the campus do needs maintenance?(You can select more than one option) </legend>
+      <label><input type="checkbox" value="campus">Library</label>
+      <label><input type="checkbox" value="campus">Lounge</label>
+      <label><input type="checkbox" value="campus">Cafe</label>
+      <label><input type="checkbox" value="campus">Residential Hall</label>
+      <label><input type="checkbox" value="campus">Computer Labs</label>
+      <label><input type="checkbox" value="campus">Class Rooms</label>
+      <label><input type="checkbox" value="campus">Laboratories</label>
+      <label><input type="checkbox" value="campus">Sport Complex</label>
+      <label><input type="checkbox" value="campus">Gym</label>
+    <fieldset>
+      <label>Additional Comment:</label>
+      <textarea></textarea>
+    </fieldset>
+    <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
